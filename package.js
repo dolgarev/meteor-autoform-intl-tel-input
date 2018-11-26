@@ -19,10 +19,13 @@ Package.onUse(function(api) {
     ], 'client');
 
     // Files
+    api.addAssets([
+      '.npm/package/node_modules/intl-tel-input/build/img/flags.png',
+      '.npm/package/node_modules/intl-tel-input/build/img/flags@2x.png'
+    ], 'client');
+
     api.addFiles([
         // Lib
-        '.npm/package/node_modules/intl-tel-input/build/img/flags.png',
-        '.npm/package/node_modules/intl-tel-input/build/img/flags@2x.png',
         '.npm/package/node_modules/intl-tel-input/build/css/intlTelInput.css',
         '.npm/package/node_modules/intl-tel-input/build/js/intlTelInput.min.js',
         '.npm/package/node_modules/intl-tel-input/lib/libphonenumber/build/utils.js',
